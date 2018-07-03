@@ -48,6 +48,8 @@ always@(Selector)begin
 		//
 		I_Type_INC:		ALUControlValues = 4'b1111;
 		R_Type_MULTPLUS:ALUControlValues= 4'b1010;
+		I_Type_MOV:		ALUControlValues = 4'b1011;
+		
 		default: ALUControlValues = 4'b1001;
 	endcase
 end
