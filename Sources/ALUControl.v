@@ -29,6 +29,7 @@ localparam I_Type_ORI    = 9'b101_xxxxxx;
 localparam BEQ_AND_BNE   = 9'b001_xxxxxx;
 //
 localparam I_Type_INC 	 = 9'b110_xxxxxx;
+localparam R_Type_MULTPLUS=9'b111_xxxxxx;
 
 reg [3:0] ALUControlValues;
 wire [8:0] Selector;
@@ -46,6 +47,7 @@ always@(Selector)begin
 		BEQ_AND_BNE:   ALUControlValues = 4'b0100;
 		//
 		I_Type_INC:		ALUControlValues = 4'b1111;
+		R_Type_MULTPLUS:ALUControlValues= 4'b1010;
 		default: ALUControlValues = 4'b1001;
 	endcase
 end
