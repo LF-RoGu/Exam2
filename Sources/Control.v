@@ -42,7 +42,7 @@ always@(OP) begin
 		BEQ:  		  ControlValues= 11'b0_000_00_01_001;
 		BNE:  		  ControlValues= 11'b0_000_00_10_001;
 		INC:			  ControlValues= 11'b0_101_00_00_110;
-		MOV:			  ControlValues= 11'b0_000_01_00_001;
+		MOV:			  ControlValues= 11'b0_101_01_00_001;
 		default:
 			ControlValues= 10'b0000000000;
 		endcase

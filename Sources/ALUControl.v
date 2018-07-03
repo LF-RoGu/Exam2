@@ -30,6 +30,7 @@ localparam BEQ_AND_BNE   = 9'b001_xxxxxx;
 //
 localparam I_Type_INC 	 = 9'b110_xxxxxx;
 localparam R_Type_MULTPLUS=9'b111_xxxxxx;
+localparam I_Type_MOV	 = 9'b001_xxxxxx;
 
 reg [3:0] ALUControlValues;
 wire [8:0] Selector;
